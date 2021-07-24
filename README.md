@@ -31,7 +31,7 @@ This dataset is also a product of the Department of Education. It contains many 
 
 ## Methods
 
-To build a prediction engine, we utilized multiple linear regression.
+Using multiple linear regression, I estimated the effects of college features (demographics, spending behaviors, etc.) on 6 year average earnings (students who enrolled 6 years ago and have since graduated). These earnings are from 2014-15.
 
 ## Results
 
@@ -85,11 +85,10 @@ For any questions, please contact Matt Schwartz at [mtschwart@gmail.com](mailto:
 ```
 ├── data
 ├── images
-├── .canvas
 ├── .gitignore
-├── CONTRIBUTING.md
-├── .pdf
-├── .ipynb
-├── .pdf
+├── College_Sports_and_Student_Outcomes.ipynb
+├── Jupyter_Notebook_PDF_College_Sports_and_Student_Outcomes_Analysis__.pdf
+├── Presentation_College_Sports_and_Student_Outcomes_Analysis.pdf
 ├── README.md
+├── project_functions_19.py
 ```
