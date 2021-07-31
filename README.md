@@ -35,15 +35,18 @@ Using multiple linear regression, I estimated the effects of college features (d
 
 ## Results
 
+The general model explained **90%** of the variation in 6 year average earnings.
+
 With Demographics:
 
 These changes are an average when holding all else equal:
 
-- **Average cost of attendance**: a one standard deviation increase in average cost of attendance leads to a 4.88% increase in earnings
-- **Percentage of asian students**: 4.83% increase in earnings
-- **Percentage of female students**: 3.09% decrease in earnings
-- **Pell grant rate**: 6.27% decrease
-- **Median debt of 4 year (150% time) completers**: 5.95% decrease in earnings
+- **Average cost of attendance**: a one standard deviation increase in average cost of attendance leads to a 7.80% increase in earnings
+- **Football Total Revenue**: 3.95% increase in earnings
+- **Percentage of asian students**: 3.90% decrease in earnings
+- **Percentage of female students**: 3.96% decrease in earnings
+- **Admission rate**: 4.49% decrease
+- **Median debt of 4 year (150% time) completers**: 4.96% decrease in earnings
 
 Having removed demographics data from the final model, I've tried to isolate what school-specific effects there are on earnings. The percentage of women at a school will bring down average earnings because women earn less than men when entering the job market, for example.
 
@@ -51,11 +54,11 @@ In this isolated model, we have 5 remaining coefficients.
 
 These changes are an average when holding all else equal:
 
-- **Average faculty salary**: a one standard deviation increase in faculty salary leads to a 6.18% increase in earnings
-- **Average cost of attendance**: 6.27% increase in earnings
-- **Percentage of students who have a declining balance after 1 year post-grad**: 3.5% increase in earnings
-- **Percentage of students who were on a pell grant**: 3.81% decrease in earnings
-- **Median debt of 4 year (150% time) completers**: 6.1% decrease in earnings
+- **Average faculty salary**: a one standard deviation increase in faculty salary leads to a 5.37% increase in earnings
+- **Average cost of attendance**: 5.0% increase in earnings
+- **Percentage of students who have a declining balance after 1 year post-grad**: 3.95% increase in earnings
+- **Percentage of students who were on a pell grant**: 4.22% decrease in earnings
+- **Median debt of 4 year (150% time) completers**: 4.88% decrease in earnings
 
 
 ## Conclusions
@@ -63,6 +66,10 @@ These changes are an average when holding all else equal:
 These coefficients, although few in number, are valuable pieces of information. They can also be proxies for other features about a school. Average faculty salary and cost of attendance speak to the resources a school has. The higher the cost, the more money there is to pay for the best instructional talent. The percentage of students who have a declining loan balance after 1 year points to how effective graduates are at getting jobs and earning a decent salary. Students earning more after graduation are more likely to pay off more of their debt. As the debt load increases however, we see that this is associated with lower average earnings. More debt hamstrings graduates, and may force them to take a less desirable job simply so they can begin to make payments.
 
 Taking a look at the first model which included demographic data, it was striking to see to what extent the percentage of women at a school has on average earnings 6 years from enrollment. The fact that an increase of 4.8% in the number of women at a school can reduce average earnings by over 3% speaks to how women are facing a constant uphill battle when it comes to pay.
+
+In the end, we found that college sports expenditures do have a statistically significant relationship with earnings in a limited capacity. In our general model, which explains 90% of the variance in average earnings, we found that Football revenue has a positive impact on earnings. This could be a proxy for school resources, or maybe even the effect of sending more athletes to the NFL for example. Either way, schools that make more from football tend to have increased earnings and better outcomes.
+
+The results were even more interesting when estimating earnings by gender. For both men and women, the average salaries of full time employees who worked for the men's and women's teams had positive effects on earnings. The positive effects mean different things due to the large gender pay gap. A one standard deviation increase in average women's teams salaries leads to a 3.38% increase in average female earnings. This is likely an indicator of school resources, but also the amount of resources a school is willing to invest in its female students and student-athletes. Women who are better supported at these schools are better off after graduating.
 
 
 ## Further Analysis
